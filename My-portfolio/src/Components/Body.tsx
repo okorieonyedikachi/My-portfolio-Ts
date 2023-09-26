@@ -8,7 +8,7 @@ const Body = () => {
   return (
     <div className="w-11/12 bg-rd-700 m-auto mt-8 ">
          <h1 className='text-2xl font-bold mb-4'>PROJECTS</h1>
-        <motion.section className="bg-gay-700 w-5/6 m-auto my-6 max-sm:w-full"
+        <motion.section className="bg-gay-700 w-full m-auto my-6 max-sm:w-full"
              initial={{ opacity: 0 }}
              whileInView={{ opacity: 1 }}
              transition={{duration:0.5}}
