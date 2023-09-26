@@ -1,11 +1,15 @@
-
+import Body from "./Components/Body"
+import Footer from "./Components/Footer"
+import Header from "./Components/Header"
 function App() {
  
 
   return (
-    <>
-      <div className='bg-red-500'>Hello world</div>
-    </>
+    <div className="font-custom">
+      <Header/>
+      <Body/>
+      <Footer/>
+    </div>
   )
 }
 
