@@ -11,7 +11,7 @@ const Footer = () => {
         <section className=" bg-rd-600 max-sm">
           <p className="ml-4 text-lg font-semibold">Dannie.</p>
         </section>
-        <section className="m-auto w-1/5">
+        <section className="m-auto w-1/5 ">
           <div className=" h-6 flex items-center gap-6">
             <a href="https://github.com/okorieonyedikachi" target="blank" className="h-full w-fit" ><img src={Github} alt="github" className="h-full w-6 " /></a>
             <a href="https://www.instagram.com/_rav33n/" target="blank"  className="h-full w-6" ><img src={IG} alt="" className="h-full" /></a>
