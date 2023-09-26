@@ -6,7 +6,9 @@ import graphql from '../assets/graphql.svg'
 import ts from '../assets/typescript-icon.svg'
 import react from '../assets/react.svg'
 
+
 const Header = () => {
+ 
   return (
     <div className="h-screen w-full flex justify-center max-sm:w-full max-sm:bg-gay-400 max-sm:flex-col-reverse max-sm:h-fit">
       <div className="w-2/5 ml-8 m-auto max-sm:m-auto max-sm:w-full">

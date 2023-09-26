@@ -16,7 +16,6 @@ const Body = () => {
             <div className="flex w-full flex-wrap gap-6 justify-center">
                 <motion.div className="bg-gray-100 shadow-md width w-5/12 h-96 rounded-lg max-sm:w-full"
                     whileHover={{ scale: 1.1 }}
-                    
                 >
                     <img src={gallery} alt="" className="w-full h-80"/>
                     <a href="https://drag-drop-app-five.vercel.app" target="blank"><p className="p-4">Photo Gallery</p></a>
