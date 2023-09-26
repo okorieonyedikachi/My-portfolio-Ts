@@ -32,7 +32,7 @@ const Header = () => {
                 <img src={tailwind} alt="" className="h-full"/>
                 <img src={react} alt="" className="h-full"/>
               </div>
-              <button className="w-40 bg-gray-400 rounded-xl h-10 hover:before:bg-orange-400">Reach Out</button>
+              <a href="mailto:cosmasdaniella@com?body=My custom mail body"><button className="w-40 bg-gray-400 rounded-xl h-10 hover:before:bg-orange-400">Reach Out</button></a>
             </div>
           </motion.section>
         
