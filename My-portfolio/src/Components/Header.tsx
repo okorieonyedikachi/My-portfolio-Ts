@@ -1,5 +1,10 @@
 import Me from "../assets/IMG_7825.jpg";
 import { motion, spring} from "framer-motion"
+import tailwind from '../assets/tailwind-css.svg'
+import js from '../assets/javascript-js.svg'
+import graphql from '../assets/graphql.svg'
+import ts from '../assets/typescript-icon.svg'
+import react from '../assets/react.svg'
 
 const Header = () => {
   return (
@@ -18,6 +23,15 @@ const Header = () => {
                 A photographer and frontend web developer with a great eye for design. I enjoy
                 crafting unique web experiences
               </p>
+              <p>Skill set:</p>
+              <div className="w-full h-12 flex gap-2 mb-7">
+                
+                <img src={ts} alt="" className="h-full"/>
+                <img src={js} alt="" className="h-full"/>
+                <img src={graphql} alt="" className="h-full"/>
+                <img src={tailwind} alt="" className="h-full"/>
+                <img src={react} alt="" className="h-full"/>
+              </div>
               <button className="w-40 bg-gray-400 rounded-xl h-10 hover:before:bg-orange-400">Reach Out</button>
             </div>
           </motion.section>
@@ -26,7 +40,7 @@ const Header = () => {
       <motion.div className="w-3/5 max-sm:w-full"
          initial={{y: -700, opacity: 0}}
          animate={{y: 0, opacity:1}}
-         transition={{duration:0.5, type:spring}}
+         transition={{duration:0.5, type:"tween"}}
       >
         <img
           src={Me} 
