@@ -1,14 +1,20 @@
 // import Me from "../assets/IMG_7825.jpg";
 // import { motion, spring} from "framer-motion"
 
+
 const Header = () => {
+
  
   return (
-    <div className="w-full  flex justify-between items-center p-10 text-slate-300 border-b-2 border-slate-100 max-sm:p-4">
+    <div className="w-full  flex justify-between items-center p-10 text-orange-500 border-b-2 border-slate-100 max-sm:p-4">
       <div className="text-3xl font-extrabold max-sm:text-xl">Dannie.</div>
       <ul className="flex text-lg max-sm:hidden">
-        <li className="mr-8">Projects</li>
-        <li>Contact</li>
+        <a href="#/project">
+          <li className="mr-8">PROJECTS</li>
+        </a>
+        <button>
+          <li>CONTACT</li>
+        </button>
       </ul>
     </div>
   );

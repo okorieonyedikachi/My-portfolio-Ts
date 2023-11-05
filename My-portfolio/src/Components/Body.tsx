@@ -1,19 +1,30 @@
 // import {motion} from "framer-motion"
+import Typewriter from "typewriter-effect";
 
 import { skills } from "../data";
 import Contact from "./Contact";
 import Projects from "./Projects";
 
 const Body = () => {
+
   return (
     <div className="w-full flex flex-col items-center max-sm:text-left">
       <div className="text-slate-300 w-[94%] justify-center items-center flex flex-col mt-10 h-full ">
-        <span className="text-lg pl-20 mb-3 max-sm:pl-0 w-full">I AM </span>
+        <span className="text-xl pl mb-3 max-sm:pl-0 w-full ">
+          HELLO THERE, I AM{" "}
+        </span>
+
         <h1 className="text-8xl font-extrabold max-sm:text-4xl mr-auto break-words">
-          ONYEDIKACHI COSMAS|
+          <Typewriter
+            options={{
+              strings: ["ONYEDIKACHI COSMAS"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </h1>
-        <div className="w-6/12  mt-6 p-10 ml-auto right-0 relative max-sm:w-full max-sm:p-1 max-md:w-11/12">
-          <h3 className="text-2xl font-bold">ABOUT ME |</h3>
+        <div className="w-6/12  mt-6 p-10 ml-auto right-0 relative max-sm:w-full max-sm:p-1 max-md:w-11/12 hover:shadow-2xl hover:shadow-zinc-950 hover:border-zinc-950 hover:border-[1px] rounded-lg">
+          <h3 className="text-2xl font-bold text-orange-500">ABOUT ME |</h3>
           <h4 className="text-lg whitespace-normal ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -24,17 +35,17 @@ const Body = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </h4>
           <div className="mt-6">
-            <h3 className="text-2xl font-bold">SKILLS |</h3>
-              <ul className=" flex flex-wrap">
-                {skills.map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center justify-center gap-3 mb- flex-wrap mr-9 pr-3"
-                  >
-                   <span className="text-5xl pb-6 bg-red-00">.</span> {item.text}{" "}
-                  </li>
-                ))}
-              </ul>
+            <h3 className="text-2xl font-bold text-orange-500">SKILLS |</h3>
+            <ul className=" flex flex-wrap">
+              {skills.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-center justify-center gap-3 mb- flex-wrap mr-9 pr-3 text-orange-50"
+                >
+                  <span className="text-5xl pb-6 bg-red-00">.</span> {item.text}{" "}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

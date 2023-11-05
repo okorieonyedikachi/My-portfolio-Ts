@@ -14,6 +14,8 @@ export  const projectData = [
   { image: calc, link: "https://github.com/okorieonyedikachi/Calculator-" },
 ];
 
+export const aboutMe = "A photographer turned Frontend developer"
+
 export const skills = [
   { text: "HTML / CSS" },
   { text: "JAVASCRIPT / TYPESCRIPT" },
@@ -21,8 +23,7 @@ export const skills = [
   { text: "REACTJS / NEXTJS" },
   { text: "EXPRESSJS" },
   { text: "GIT / GITHUB" },
-  { text: "FIREBASE" },
-  { text: "" },
+  { text: "FIREBASE" }
 ];
 
 export const socials = [
