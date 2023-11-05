@@ -5,12 +5,12 @@ function App() {
  
 
   return (
-    <div className="font-custom">
-      <Header/>
-      <Body/>
-      <Footer/>
+    <div className="font-custom bg-gradient-to-r from-zinc-600 to-neutral-900 w-full">
+      <Header />
+      <Body />
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default App

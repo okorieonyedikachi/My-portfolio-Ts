@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom:['Playfair Display', 'serif']
-      }
+        custom: ["Chakra Petch", "sans-serif"],
+      },
     },
   },
   plugins: [],
-}
+};
 
