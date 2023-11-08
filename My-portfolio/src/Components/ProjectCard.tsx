@@ -1,14 +1,14 @@
-import { useState } from "react"
+import { useState } from "react";
 
 type ProjectProps = {
-    item: {
-        image: string
-        link: string 
-    }
-}
+  item: {
+    image: string;
+    link: string;
+  };
+};
 
-const ProjectCard:React.FC<ProjectProps> = ({item}) => {
-    const [isHovered, setIsHovered] = useState(false)
+const ProjectCard: React.FC<ProjectProps> = ({ item }) => {
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
@@ -20,16 +20,18 @@ const ProjectCard:React.FC<ProjectProps> = ({item}) => {
         <img src={item.image} className="h-full" />
         {isHovered && (
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75">
-            <div className="bg-orange-500 w-[180px] h-16 rounded-full flex justify-center items-center max-sm:h-12 max-sm:w-[90px]">
-              <p className="text-white text-xl font-semibold max-sm:text-sm">
-                Click here
-              </p>
-            </div>
+            <a href={item.link} target="blank">
+              <div className="bg-orange-500 w-[180px] h-16 rounded-full flex justify-center items-center max-sm:h-12 max-sm:w-[90px]">
+                <p className="text-white text-xl font-semibold max-sm:text-sm">
+                  Click here
+                </p>
+              </div>{" "}
+            </a>
           </div>
         )}
       </div>
     </div>
   );
-}
+};
 
-export default ProjectCard
+export default ProjectCard;

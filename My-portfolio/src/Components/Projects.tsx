@@ -14,14 +14,6 @@ const Projects = () => {
         <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 ">
           {projectData.map((item, index) => (
             <ProjectCard key={index} item={item} />
-            // <div
-            //   key={index}
-            //   className="inline-block px-3 w-[650px] h-[400px] max-sm:w-[200px] max-sm:h-[200px] "
-            // >
-            //   <div className="w-full h-full  overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-            //     <img src={item.image} className="h-full" />
-            //   </div>
-            // </div>
           ))}
         </div>
       </div>

@@ -14,7 +14,7 @@ const Body = () => {
           HELLO THERE, I AM{" "}
         </span>
 
-        <h1 className="text-8xl font-extrabold max-sm:text-4xl mr-auto break-words">
+        <h1 className="text-8xl font-extrabold max-sm:text-4xl mr-auto break-word shadow-2xl shadow-zinc-950">
           <Typewriter
             options={{
               strings: ["ONYEDIKACHI COSMAS"],
@@ -40,7 +40,7 @@ const Body = () => {
               {skills.map((item, index) => (
                 <li
                   key={index}
-                  className="flex items-center justify-center gap-3 mb- flex-wrap mr-9 pr-3 text-orange-50"
+                  className="flex items-center justify-center gap-3 mb- flex-wrap mr-9 pr-3 text-orange-10`0"
                 >
                   <span className="text-5xl pb-6 bg-red-00">.</span> {item.text}{" "}
                 </li>
