@@ -4,6 +4,7 @@ import Typewriter from "typewriter-effect";
 import { skills } from "../data";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import { ToastContainer } from "react-toastify";
 
 const Body = () => {
 
@@ -51,6 +52,7 @@ const Body = () => {
       </div>
       <Projects />
       <Contact />
+      <ToastContainer />
     </div>
   );
 };
