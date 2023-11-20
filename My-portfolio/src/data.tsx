@@ -8,10 +8,25 @@ import LinkedIn from "./assets/linkedin.png";
 import Twitter from "./assets/twitter.svg";
 
 export  const projectData = [
-  { image: gallery, link: "https://drag-drop-app-five.vercel.app" },
-  { image: rick, link: "https://github.com/okorieonyedikachi/RickandMorty-Ts" },
-  { image: movie, link: "https://hng-task2-liart.vercel.app" },
-  { image: calc, link: "https://github.com/okorieonyedikachi/Calculator-" },
+  {
+    image: gallery,
+    link: "https://drag-drop-app-five.vercel.app",
+    details:
+      "This is a Drag-and-Drop Gallery web-app built with React and Typescript that allows users to explore images using the image tags on the search filter and easily rearrange the images, using the drag-n-drop functionality.",
+  },
+  {
+    image: rick,
+    link: "https://github.com/okorieonyedikachi/RickandMorty-Ts",
+    details:
+      "A website that displays the characters, episodes and locations in Rick and Morty. React, Typescript, and GraphQL were the foundational technologies employed to develop this project.",
+  },
+  {
+    image: movie,
+    link: "https://hng-task2-liart.vercel.app",
+    details:
+      "This is a movie discovery web application built React and Typescript, allows users to search for movies, view movie details, and save their favorite movies. It consumes movie data from the TMDB API.",
+  },
+  { image: calc, link: "https://github.com/okorieonyedikachi/Calculator-", details: "A mini calculatorbuilt with Javascript"},
 ];
 
 export const aboutMe = "A photographer turned Frontend developer"
@@ -23,7 +38,8 @@ export const skills = [
   { text: "REACTJS / NEXTJS" },
   { text: "EXPRESSJS" },
   { text: "GIT / GITHUB" },
-  { text: "FIREBASE" }
+  { text: "FIREBASE" },
+  { text: "GRAPHQL" },
 ];
 
 export const socials = [
