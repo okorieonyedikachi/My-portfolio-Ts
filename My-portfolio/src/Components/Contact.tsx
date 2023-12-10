@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { db } from "../firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import  db  from "../firebase";
 
 
 const Contact = () => {
@@ -13,7 +12,7 @@ const Contact = () => {
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [messageError, setMessageError] = useState("");
-
+  
 
   const isFormValid = () => {
     return name.trim() !== "" && email.trim() !== "" && message.trim() !== "";
