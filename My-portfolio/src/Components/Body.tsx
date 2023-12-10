@@ -7,7 +7,6 @@ import Projects from "./Projects";
 import { ToastContainer } from "react-toastify";
 
 const Body = () => {
-
   return (
     <div className="w-full flex flex-col items-center max-sm:text-left">
       <div className="text-slate-300 w-[94%] justify-center items-center flex flex-col mt-10 h-full ">
@@ -27,13 +26,12 @@ const Body = () => {
         <div className="w-6/12  mt-6 p-10 ml-auto right-0 relative max-sm:w-full max-sm:p-1 max-md:w-11/12 hover:shadow-2xl hover:shadow-zinc-950 hover:border-zinc-950 hover:border-[1px] rounded-lg">
           <h3 className="text-2xl font-bold text-orange-500">ABOUT ME |</h3>
           <h4 className="text-lg whitespace-normal ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Levaraging my expertise in creative photography and frontend
+            development my goal is to promote a culture of creativity and
+            technological advancement one project at a time. I want to set a
+            stage where teachnology seamlessly merges with the captivating world
+            of visual artistry by crafting more intuitve,immersive user-centric
+            interfaces. Oh yea call me Dannie 🙂.
           </h4>
           <div className="mt-6">
             <h3 className="text-2xl font-bold text-orange-500">SKILLS |</h3>
