@@ -25,6 +25,13 @@ const Body = () => {
         </h1>
         <div className="w-6/12  mt-6 p-10 ml-auto right-0 relative max-sm:w-full max-sm:p-1 max-md:w-11/12 hover:shadow-2xl hover:shadow-zinc-950 hover:border-zinc-950 hover:border-[1px] rounded-lg">
           <h3 className="text-2xl font-bold text-orange-500">ABOUT ME |</h3>
+          <h4 className="text-lg whitespace-normal mb-4">
+            Hi I'm Onyedikachi Cosmas Okorie, a tech enthusiast driven by an
+            insatiable curiosity for innovation and problem-solving. I have a
+            knack for seeing the world through the lens of creativity, finding
+            joy in unraveling complex tech challenges, and crafting solutions
+            that make a difference.
+          </h4>
           <h4 className="text-lg whitespace-normal ">
             Levaraging my expertise in creative photography and frontend
             development my goal is to promote a culture of creativity and
