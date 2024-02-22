@@ -1,6 +1,5 @@
 import gallery from "./assets/gallery.png";
 import rick from "./assets/rickandmorty.png";
-import calc from "./assets/calc.png";
 import movie from "./assets/screenshot.jpg";
 import Github from "./assets/github.png";
 import IG from "./assets/instagram.svg";
