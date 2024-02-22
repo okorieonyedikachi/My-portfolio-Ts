@@ -1,18 +1,25 @@
-import gallery from "./assets/gallery.png"
-import rick from "./assets/rickandmorty.png"
-import calc from './assets/calc.png'
-import movie from './assets/screenshot.jpg'
+import gallery from "./assets/gallery.png";
+import rick from "./assets/rickandmorty.png";
+import calc from "./assets/calc.png";
+import movie from "./assets/screenshot.jpg";
 import Github from "./assets/github.png";
 import IG from "./assets/instagram.svg";
 import LinkedIn from "./assets/linkedin.png";
 import Twitter from "./assets/twitter.svg";
+import ourHaven from "./assets/Screenshot 2024-02-22 at 18.26.30.png";
 
-export  const projectData = [
+export const projectData = [
   {
     image: gallery,
     link: "https://drag-drop-app-five.vercel.app",
     details:
       "This is a Drag-and-Drop Gallery web-app built with React and Typescript that allows users to explore images using the image tags on the search filter and easily rearrange the images, using the drag-n-drop functionality.",
+  },
+  {
+    image: ourHaven,
+    link: "https://ourhaven.app/",
+    details:
+      "Our Haven simplifies your life by handling everyday tasks and household needs, so you can focus on what matters most to you.",
   },
   {
     image: rick,
@@ -26,10 +33,9 @@ export  const projectData = [
     details:
       "This is a movie discovery web application built React and Typescript, allows users to search for movies, view movie details, and save their favorite movies. It consumes movie data from the TMDB API.",
   },
-  { image: calc, link: "https://github.com/okorieonyedikachi/Calculator-", details: "A mini calculatorbuilt with Javascript"},
 ];
 
-export const aboutMe = "A photographer turned Frontend developer"
+export const aboutMe = "A photographer turned Frontend developer";
 
 export const skills = [
   { text: "HTML / CSS" },
