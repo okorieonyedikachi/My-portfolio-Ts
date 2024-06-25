@@ -22,4 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-My-portfolio/src/firebase.tsx
+firebase.ts
+

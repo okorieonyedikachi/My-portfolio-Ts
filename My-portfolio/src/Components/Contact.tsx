@@ -1,26 +1,23 @@
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import { toast} from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import  db  from "../firebase";
-
+import db from "../firebase";
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [messageError, setMessageError] = useState("");
-  
 
   const isFormValid = () => {
     return name.trim() !== "" && email.trim() !== "" && message.trim() !== "";
   };
 
-
-  const handleSubmit = async (e: { preventDefault: () => void; }) =>{
-    e.preventDefault()
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
     if (name.trim() == "") {
       setNameError("Please fill in the Name field.");
     }
@@ -30,13 +27,13 @@ const Contact = () => {
     if (message.trim() == "") {
       setMessageError("Please fill in the Message field.");
     }
-    if(isFormValid()) {
-     try {
-       await addDoc(collection(db, "users"), {
-         name: name,
-         email: email,
-         message: message
-       });
+    if (isFormValid()) {
+      try {
+        await addDoc(collection(db, "users"), {
+          name: name,
+          email: email,
+          message: message,
+        });
         toast.success("Message sent successfully!", {
           theme: "dark",
           autoClose: 2000,
@@ -45,23 +42,20 @@ const Contact = () => {
           pauseOnHover: true,
           draggable: true,
         });
-         setName("");
-         setEmail("");
-         setMessage("");
-         // Reset error messages
-         setNameError("");
-         setEmailError("");
-         setMessageError("");
-     } catch (e) {
-       console.error("Error adding document: ", e);
+        setName("");
+        setEmail("");
+        setMessage("");
+        // Reset error messages
+        setNameError("");
+        setEmailError("");
+        setMessageError("");
+      } catch (e) {
+        console.error("Error adding document: ", e);
 
-       toast.error("Error submitting data. Please try again.");
-     } 
-    } 
-     
-    
-  }    
-   
+        toast.error("Error submitting data. Please try again.");
+      }
+    }
+  };
 
   return (
     <div className=" w-[94%] m-10 flex text-slate-300 mt-8 max-sm:flex-col-reverse max-sm:w-full max-sm:items-center ">
@@ -131,11 +125,12 @@ const Contact = () => {
                 className="w-11/12 bg-gradient-to-r from-zinc-600 to-neutral-900 px-4 py-2 ml-4 rounded-lg"
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
-              {messageError && <p className=" ml-4 text-red-600">{messageError}</p>}
+              {messageError && (
+                <p className=" ml-4 text-red-600">{messageError}</p>
+              )}
             </div>
             <button
               type="submit"
-             
               className="w-[150px] h-10 flex items-center justify-center hover:text-orange-500 ml-4 rounded-lg bg-gradient-to-r from-zinc-600 to-neutral-900 "
             >
               SEND MESSAGE
@@ -148,4 +143,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
