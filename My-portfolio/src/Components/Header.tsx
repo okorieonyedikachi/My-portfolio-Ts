@@ -1,12 +1,11 @@
-
+import { Link } from "react-router-dom";
+import Projects from "./Projects";
 const Header = () => {
-
- 
   return (
     <div className="w-full  flex justify-between items-center p-10 text-orange-500 border-b-2 border-slate-100 max-sm:p-4">
       <div className="text-3xl font-extrabold max-sm:text-xl">DANNIE.</div>
       <ul className="flex text-lg max-sm:hidden">
-        <a href="#/project">
+        <a href="./Projects">
           <li className="mr-8">PROJECTS</li>
         </a>
         <button>
@@ -19,7 +18,8 @@ const Header = () => {
 
 export default Header;
 
-{/* <div className="h-screen w-full flex justify-center max-sm:w-full max-sm:bg-gay-400 max-sm:flex-col-reverse max-sm:h-fit">
+{
+  /* <div className="h-screen w-full flex justify-center max-sm:w-full max-sm:bg-gay-400 max-sm:flex-col-reverse max-sm:h-fit">
       <div className="w-2/5 ml-8 m-auto max-sm:m-auto max-sm:w-full">
           <motion.section className="bg-red-80 m-auto w-5/6 h-96 flex items-center justify-center rounded-lg max-sm:g-red-500"
             initial={{x: -250}}
@@ -71,4 +71,5 @@ export default Header;
           className="h-full w-full  bg-blue-500 object-cover"
         />
       </motion.div>
-    </div> */}
+    </div> */
+}

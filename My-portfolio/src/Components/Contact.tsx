@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import db from "../firebase.tsx";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -57,10 +59,17 @@ const Contact = () => {
     }
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className=" w-[94%] m-10 flex text-slate-300 mt-8 max-sm:flex-col-reverse max-sm:w-full max-sm:items-center ">
       <div className="w-[94%] flex justify-between max-sm:flex-col">
-        <section className="w-[48%] max-sm:w-full max-sm:justify-center max-sm:flex-col">
+        <section
+          data-aos="fade-right"
+          className="w-[48%] max-sm:w-full max-sm:justify-center max-sm:flex-col"
+        >
           <h3 className="text-5xl text-orange-500 font-bold pt-10 max-sm:text-3xl max-sm:pt-2">
             CONTACT |
           </h3>
@@ -88,7 +97,10 @@ const Contact = () => {
             </span>
           </p>
         </section>
-        <section className="w-[44%] h-full shadow-2xl shadow-zinc-950 border-zinc-950 border-[1px] rounded-lg max-sm:w-full ">
+        <section
+          data-aos="fade-left"
+          className="w-[44%] h-full shadow-2xl shadow-zinc-950 border-zinc-950 border-[1px] rounded-lg max-sm:w-full "
+        >
           <h3 className="text-5xl text-orange-500 font-bold pt-10 pl-8 max-sm:text-3xl">
             CONTACT FORM |
           </h3>

@@ -5,8 +5,14 @@ import { skills } from "../data";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import { ToastContainer } from "react-toastify";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Body = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="w-full flex flex-col items-center max-sm:text-left">
       <div className="text-slate-300 w-[94%] justify-center items-center flex flex-col mt-10 h-full ">
@@ -23,7 +29,10 @@ const Body = () => {
             }}
           />
         </h1>
-        <div className="w-6/12  mt-6 p-10 ml-auto right-0 relative max-sm:w-full max-sm:p-1 max-md:w-11/12 hover:shadow-2xl hover:shadow-zinc-950 hover:border-zinc-950 hover:border-[1px] rounded-lg">
+        <div
+          data-aos="fade-left"
+          className="w-6/12  mt-6 p-10 ml-auto right-0 relative max-sm:w-full max-sm:p-1 max-md:w-11/12 hover:shadow-2xl hover:shadow-zinc-950 hover:border-zinc-950 hover:border-[1px] rounded-lg"
+        >
           <h3 className="text-2xl font-bold text-orange-500">ABOUT ME |</h3>
           <h4 className="text-lg whitespace-normal mb-4">
             Hi I'm Onyedikachi Cosmas Okorie, a tech enthusiast driven by an

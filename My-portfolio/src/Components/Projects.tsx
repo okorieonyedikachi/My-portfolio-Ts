@@ -1,12 +1,16 @@
+import { useEffect } from "react";
 import { projectData } from "../data";
 import ProjectCard from "./ProjectCard";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
-
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   return (
-    <div className="w-[94%] m-10 max-sm:mb-4">
+    <div className="w-[94%] m-10 max-sm:mb-4" data-aos="fade-down">
       <h3 className="text-5xl font-bold text-orange-500 mb-10 max-sm:text-3xl">
         PROJECTS|
       </h3>
